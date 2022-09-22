@@ -24,10 +24,10 @@ function myFunction() {
     //let MailText =  "abcde";
     let NAME = data[i][6];
 
-    let url_video = "https://www.youtube.com/watch?v=tMgIk70cw1s";
-    let url_annual = "https://www.thoughtfulgift.org/_files/ugd/0daab0_0a4ae142f2974fb59e2b28472436b76c.pdf";
-    let url_flyer = "https://www.thoughtfulgift.org/_files/ugd/0daab0_fe8465c4c83e43eb94b24b9086e258ca.pdf";
-    let url_Tokyo = "https://www.tokyo-np.co.jp/article/185910"
+    let url_video = "（団体の紹介動画）";
+    let url_annual = "（団体のアニュアルレポート）";
+    let url_flyer = "（団体のチラシ）";
+    let url_Tokyo = "（団体が取材された記事のURL）"
 
     // 本文
     let html =`${NAME}<br />
@@ -52,11 +52,11 @@ function myFunction() {
     ご検討いただけますと幸いです。<br />
     どうぞよろしくお願いいたします。<br />
     &nbsp;<br />
-一般社団法人Thoughtful&nbsp;Gift<br />
+一般社団法人○○&nbsp;○○<br />
 　((自分の名前))<br />
-　TEL＆FAX&nbsp;：044(385)3107<br />
-　URL：https://www.thoughtfulgift.org/<br />
-&nbsp;&nbsp;&nbsp;&nbsp;E-mail：thoughtfulgift.cp@gmail.com`;
+　TEL＆FAX&nbsp;：（電話番号）<br />
+　URL：(ホームページURL)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;E-mail：（メールアドレス）`;
 
     GmailApp.createDraft(recipient, subject, body, {htmlBody: html});
     };
